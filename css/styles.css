@@ -1,0 +1,62 @@
+/* Ini css */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>section {
+    display: flex;
+    align-items: center;
+}
+.logo-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/19b731a8e55d1291039e4f3ebba818b8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-item {
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+.banner-container-1 {
+    height: 250px;
+    border: 1px solid black;
+}
+
+.banner-container-2 {
+    height: 150px;
+    border: 1px solid black;
+}
+
+.facility-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-result {
+    height: 100px;
+    border: 1px solid black;
+}
+
+.message-us-section {
+    display: flex;
+}
+
+.result-container {
+    width: 100%;
+}
+
+.facility-list div h5 {
+    text-align: center;
+    font-size: 18px; 
+    color: #333;
+    font-weight: bold;
+}
