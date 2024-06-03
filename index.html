@@ -32,9 +32,11 @@
             <article>
                 <p>Di Web ini, Saya akan mengajak teman-teman semua untuk belajar bersama dalam Web Programming</p>
                 <div class="banner-container-1">
+                </article>
 
-                </div>
-            </article>
+            </div>
+        </article>
+
         </section>
 
         <hr>
@@ -62,20 +64,19 @@
             </header>
 
             <article class="facility-list">
-                <div>
-                    <img src="image\gambarmateri-removebg-preview.png" alt="materi">
-                    <h5>Materi Pembelajaran</h5>
-                </div>
-
-                <div>
+                <div class="facility-list">
+                    <div class="item">
+                        <img src="image\gambarmateri-removebg-preview.png" alt="materi">
+                        <h3>Materi Pembelajaran</h3>    
+                    </div class="item">
                     <img src="image\gambarvideopembelajaran-removebg-preview.png" alt="materi">
-                    <h5>Video Pembahasan</h5>
-                </div>
-
-                <div>
+                    <h3>Video Pembahasan</h3>
+                    </div class="item">
                     <img src="image\gambarproject-removebg-preview.png" alt="materi">
-                    <h5>Project</h5>
-                </div>
+                    <h3>Project</h3>
+
+                    </div>
+                  </div>
             </article>
         </section>
 
@@ -84,83 +85,29 @@
         <!-- Message us -->
         <section id="message-us">
             <header>
-                <h1>Message Us</h1>
+                <h1>Hubungi Kami</h1>
             </header>
 
             <section class="message-us-section">
                 <section>
                     <form id="myForm">
-                        <table>
-                            <tr class="form-table">
-                                <td class="label">Nama</td>
-                                <td class="label">:</td>
-                                <td>
-                                    <input
-                                        type="text"
-                                        class="input-text"
-                                        name="nama"
-                                        id="nama"
-                                        placeholder="Nama"
-                                    />
-                                </td>
-                            </tr>
-            
-                            <tr class="form-table">
-                                <td class="label">Tanggal Lahir</td>
-                                <td class="label">:</td>
-                                <td>
-                                    <input
-                                        type="date"
-                                        class="input-date"
-                                        name="tgl_lahir"
-                                        id="tgl_lahir"
-                                    />
-                                </td>
-                            </tr>
-            
-                            <tr class="form-table">
-                                <td class="label">Jenis kelamin</td>
-                                <td class="label">:</td>
-                                <td>
-                                    <input
-                                        type="radio"
-                                        class="input-radio"
-                                        id="laki-laki"
-                                        name="jenis_kelamin"
-                                        value="Laki-Laki"
-                                    />
-                                    <label for="laki-laki">Laki-Laki</label>
-                                    <input
-                                        type="radio"
-                                        class="input-radio"
-                                        id="perempuan"
-                                        name="jenis_kelamin"
-                                        value="Perempuan"
-                                    />
-                                    <label for="perempuan">Perempuan</label>
-                                </td>
-                            </tr>
-            
-                            <tr class="form-table">
-                                <td class="label">Pesan</td>
-                                <td class="label">:</td>
-                                <td>
-                                    <textarea
-                                        name="message"
-                                        class="input-text"
-                                        id="message"
-                                        placeholder="Ketik Pesan"
-                                        rows="4"
-                                    ></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="submit" class="button" value="Submit" />
-                                </td>
-                            </tr>
-                        </table>
-                    </form>
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        
+                        <label for="birthdate">Tanggal Lahir:</label>
+                        <input type="date" id="birthdate" name="birthdate"><br><br>
+                        
+                        <label>Jenis kelamin:</label>
+                        <input type="radio" id="male" name="gender" value="Laki-Laki">
+                        <label for="male">Laki-Laki</label>
+                        <input type="radio" id="female" name="gender" value="Perempuan">
+                        <label for="female">Perempuan</label><br><br>
+                        
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message"></textarea><br><br>
+                        
+                        <input type="submit" value="Submit">
+                      </form>
                 </section>
             </section>
         </section>
