@@ -1,7 +1,7 @@
 /* Ini css */
 
 body {
-    background-color:peru; /* Warna merah */
+    background-color:dodgerblue /* Warna merah */
   }
   
 nav {
@@ -71,11 +71,16 @@ nav>section {
     align-items: center;
   }
   
-  .item {
-    text-align: center;
-    margin: 0 20px;
+  
+  .item img:hover {
+    transform: scale(1.1);
   }
   
+  .item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
   .item img {
     width: 150px;
     height: 150px;
@@ -92,3 +97,15 @@ nav>section {
     margin-top: 10px;
     font-size: 18px;
   }
+
+  .item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+
+@media only screen and (max-width: 600px) {
+
+}
