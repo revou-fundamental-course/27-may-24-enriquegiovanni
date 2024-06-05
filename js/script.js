@@ -13,4 +13,10 @@ form.addEventListener('submit', function(event) {
   const result = `Nama: ${name}\nTanggal Lahir: ${birthdate}\nJenis Kelamin: ${gender}\nPesan: ${message}`;
 
   alert(result);
+
+  // Function untuk Toggler Navbar
+function toggleNavbar() {
+  var nav = document.getElementById("navbar-nav");
+  nav.classList.toggle("active");
+}
 });

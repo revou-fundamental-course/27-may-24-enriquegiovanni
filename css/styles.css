@@ -1,15 +1,18 @@
 /* Ini css */
 
 body {
-    background-color:orange /* Warna merah */
+    background-color:orange/* Warna merah */
   }
-  
+
+
 nav {
     display: flex;
     justify-content: space-between;
+    background-color: orange;
+    padding: 10px 10px;
 }
 
-nav>section {
+nav section {
     display: flex;
     align-items: center;
 }
@@ -17,9 +20,17 @@ nav>section {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-image: url(https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/19b731a8e55d1291039e4f3ebba818b8.png);
+    background-image: url(../image/logoforte.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.logo-icon:hover{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nav-item {
@@ -28,6 +39,19 @@ nav>section {
     border-radius: 8px;
     color: black;
     text-decoration: none;
+}
+
+.navbar-toggler {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggler div {
+  width: 25px;
+  height: 3px;
+  background-color: grey;
+  margin: 4px 0;
 }
 
 .banner-container-1 {
@@ -58,53 +82,50 @@ nav>section {
     width: 100%;
 }
 
-.facility-list div h5 {
+.facility-list {
     text-align: center;
-    font-size: 18px; 
-    color: hwb(0 29% 68%);
-    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    flex-wrap: wrap;
 }
 
 .fasilitas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color:cornsilk;
+    min-height: 350px;
   }
   
   
-  .item img:hover {
-    transform: scale(1.1);
-  }
-  
-  .item h3 {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-
-  .item img {
+.facility-satu,
+.facility-dua,
+.facility-tiga{
     width: 150px;
     height: 150px;
+    background-color:cornsilk;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-  }
-  
-  .item img:hover {
-    transform: scale(1.1);
-  }
-  
-  .item h1 {
-    margin-top: 10px;
-    font-size: 18px;
-  }
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
 
-  .item img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-  }
+.facility-satu{
+  background-image: url(../image/drillskids.jpeg);
+}
+
+.facility-dua{
+  background-image: url(../image/handshake.jpg);
+}
+
+.facility-tiga{
+  background-image: url(../image/matches.jpg);
+}
+
+.facility-satu:hover,
+.facility-dua:hover,
+.facility-tiga:hover{
+  width: 200px;
+  height: 200px;
+}
 
   .images {
     display: flex;
@@ -149,7 +170,7 @@ nav>section {
   transition: 1s;
  }
  .navigation a:hover {
-background-color: #666;
+ background-color: #666;
  }
 
  .navigation {
@@ -162,10 +183,9 @@ background-color: #666;
   margin-top: -50px;
  }
 
- @media only screen and (max-width: 480px) {
+.footer{
+  background-color:orange;
+  padding: 1px;
+  text-align: center;
 
-  .facility-list {
-    flex-direction: column;
-    align-items: center;
-  }
 }

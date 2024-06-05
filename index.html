@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enrique Portofolio</title>
+    <title>Enrique's Web</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -17,20 +17,25 @@
             <a class="nav-item" href="#facilities">Fasilitas<a>
             <a class="nav-item" href="#message-us">Hubungi Kami</a>
         </section>
+        
+        <div class="navbar-toggler" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
 
-    <hr>
-
+<hr>
     <section>
         <!-- Home -->
         <section id="home">
             <header>
-                <h1>Hi <span id="name"></span> Welcome to Programming Center</h1>
+                <h1>Hi <span id="name"></span>, Welcome to Forte Academy</h1>
             </header>
 
             
             <article>
-                <p>Di Web ini, Saya akan mengajak teman-teman semua untuk belajar bersama dalam Web Programming</p>
+                <p>Forte Academy membuka kesempatan kepada anak-anak berprestasi untuk menggapai cita-citanya untuk menjadi Bintang</p>
                    <div class="wrapper">
                     <div class="slides"> 
                         <span id="slide-1"></span>
@@ -38,10 +43,10 @@
                         <span id="slide-3"></span>
                         <span id="slide-4"></span>
 
-                        <div class="images"><img src="image/sri_lanka_sigiriya_lion_rock-1020x600.jpg" alt="sri_lanka_sigiriya_lion_rock-1020x600">
-                        <img src="image/sri_lanka_arugam_bay-1020x600.jpg" alt="sri_lanka_arugam_bay-1020x600">
-                        <img src="image/jocelyne-yvonne-tUANuNvPh3E-unsplash-1020x600.jpg" alt="jocelyne-yvonne-tUANuNvPh3E-unsplash-1020x600">
-                        <img src="image/Safe-Driving-on-Mountain-Roads-1020x600.jpg" alt="Safe-Driving-on-Mountain-Roads-1020x600"></div></div> </div>
+                        <div class="images"><img src="image/gambarlapangan.jpg" alt="gambarlapangan">
+                        <img src="image/gambarlatihan.jpg" alt="gambarlatihan">
+                        <img src="image/gambarlatihan2.jpg" alt="gambarlatihan2">
+                        <img src="image/gambarbola.jpg" alt="gambarbola"></div></div> </div>
                    
                 </article>
                 <div class="navigation">
@@ -55,24 +60,21 @@
 
         </section>
 
-        <hr>
 
         <!-- Profile -->
         <section id="profile">
             <header>
-                <h1>Profile Saya</h1>
+                <h1>Profile</h1>
             </header>
 
             
             
                 <div class="banner-container-2">
-                    Halo nama saya Enrique Giovanni, saya merupakan Mahasiswa dari Universitas Gunadarma, Disini saya akan membagikan hasil project saya yaitu membuat web programming.
-                    Saya sangat senang belajar dari 0 dalam pembuatan web ini, semoga dengan pembuatan web ini saya semakin memperdalam lagi.
+                    Forte Academy didirikan pada tahun 2008 di San Fransisco, Amerika Serikat. Di Forte Academy, beberapa fasilitas disediakan seperti Latihan bersama, Sparring, dan juga Pertandingan Besar.
                 </div>
             </article>
         </section>
 
-        <hr>
 
         <!-- Our Facilities -->
         <section id="facilities">
@@ -80,17 +82,25 @@
                 <h1>Fasilitas Kami</h1>
             </header>
 
-            <article class="facility-list">
+            <section class="facilities" id="facilities">
+                <header>
+                </header>
                 <div class="facility-list">
-                    <div class="item">
-                        <img src="image\gambarmateri-removebg-preview.png" alt="materi">
-                        <h3>Materi Pembelajaran</h3>    
+                    <div class="container-facility">
+                        <div class="facility-satu"></div>
+                        <h4>Training</h4>
                     </div>
+                    <div class="container-facility">
+                        <div class="facility-dua"></div>
+                        <h4>Sparring</h4>
+                    </div>
+                    <div class="container-facility">
+                        <div class="facility-tiga"></div>
+                        <h4>Matches</h4>
                   </div>
             </article>
         </section>
 
-        <hr>
 
         <!-- Message us -->
         <section id="message-us">
@@ -123,9 +133,9 @@
         </section>
     </section>
 
-    <footer>
-
-    </footer>
+        <footer class="footer">
+            <p>&copy;2024. Enrique</p>
+        </footer>
 
     <script src="js\script.js"></script>
 </body>
